@@ -126,21 +126,21 @@ public class UTS_22_037 extends javax.swing.JFrame {
 
     private void btPenggunaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btPenggunaActionPerformed
         String pilihanpemain = cbPemain.getSelectedItem().toString();
-        String pilihankomputer = cbLawan.getSelectedItem().toString();
-        
-        if(pilihanpemain.equals("GUNTING")) && (pilihankomputer.equals("KERTAS")){
-            JOptionPane.showMessageDialog(null, pilihanpemain + "GUNTING" + pilihankomputer + "");
-        }else if (pilihanpemain.equals("BATU")) && (pilihankomputer.equals("GUNTING")){
-            JOptionPane.showMessageDialog(this, pilihanpemain + "BATU");
-        }else if {pilihanpemain.equals("KERTAS")) && (pilihankomputer.equals("BATU")){
-            JOptionPane.showMessageDialog(this, pilihanpemain + "KERTAS");
-        }else if {pilihanpemain.equals("Gunting")) && (pilihankomputer.equals("KERTAS")){
-            JOptionPane.showMessageDialog(this, pilihanpemain + "KERTAS");
-                }
+    String pilihankomputer = cbLawan.getSelectedItem().toString();
+    
+    if (pilihanpemain.equals("GUNTING") && pilihankomputer.equals("KERTAS")) {
+        JOptionPane.showMessageDialog(null, pilihanpemain + " vs " + pilihankomputer);
+    } else if (pilihanpemain.equals("BATU") && pilihankomputer.equals("GUNTING")) {
+        JOptionPane.showMessageDialog(this, pilihanpemain + " vs " + pilihankomputer);
+    } else if (pilihanpemain.equals("KERTAS") && pilihankomputer.equals("BATU")) {
+        JOptionPane.showMessageDialog(this, pilihanpemain + " vs " + pilihankomputer);
+    } else if (pilihanpemain.equals("GUNTING") && pilihankomputer.equals("KERTAS")) {
+        JOptionPane.showMessageDialog(this, pilihanpemain + " vs " + pilihankomputer);
+    }
     }//GEN-LAST:event_btPenggunaActionPerformed
 
     private void tfHasilActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfHasilActionPerformed
-        setText.btPengguna("");
+        tfHasil.setText("");
     }//GEN-LAST:event_tfHasilActionPerformed
 
     /**
